@@ -22,9 +22,9 @@ fs.appendFile('server.log',log +'\n',(err)=>{
 });
     next();
 });
-app.use((req,res,next)=>{
-res.render('maintance.hbs');
-});
+// app.use((req,res,next)=>{
+// res.render('maintance.hbs');
+// });
 app.use(express.static(__dirname + '/public'));
 
 hbs.registerHelper('scrumit',(message)=>{
